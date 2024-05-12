@@ -1,0 +1,22 @@
+{
+  "name": "hauto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"cd backend && node index.js",
+    "client":"cd ui && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-backend": "cd backend && npm install",
+    "install-ui": "cd ui && npm install",
+    "build-ui":"cd ui && npm run build",
+    "install-all": "npm install && npm run install-backend && npm run install-ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
